@@ -13,7 +13,9 @@ test('first test', () => {
   };
   expect(recever).toStrictEqual(expected);
   const char1 = new Character(1, 20, 20, 0);
-  expect(char1).toStrictEqual(char1.getError());
+  const receverchar1 = char1.getError();
+  const expectedchar1 = console.error();
+  expect(receverchar1).toStrictEqual(expectedchar1);
   const char2 = new Character(1, 20, 20, 50);
   expect(char2.damage(30)).toStrictEqual(char2.health = 21.5);
 });

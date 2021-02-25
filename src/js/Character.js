@@ -13,7 +13,11 @@ export default class Character {
 
   // eslint-disable-next-line class-methods-use-this
   getError(message) {
-    throw new Error(message);
+    try {
+      throw new Error(message);
+    } catch {
+      console.error(message);
+    }
   }
 
   // eslint-disable-next-line class-methods-use-this
