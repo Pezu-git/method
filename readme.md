@@ -1,3 +1,3 @@
 
 
-[![Build status](https://ci.appveyor.com/api/projects/status/bxsp9u4nqkolo7wm?svg=true)](https://ci.appveyor.com/project/Pezu-git/prototype)
+[![Build status](https://ci.appveyor.com/api/projects/status/u78ynnbc788ui1or?svg=true)](https://ci.appveyor.com/project/Pezu-git/method)
