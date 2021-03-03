@@ -3,9 +3,10 @@
 import Character from '../js/Character.js';
 
 test('levelUp test', () => {
-  const char = new Character(1, 20, 20, 50).levelUp();
+  const char = new Character(1, 20, 20, 50);
+  char.levelUp();
   const expected = new Character(2, 24, 24, 100);
-  expect(char).not.toBe(expected);
+  expect(char).toEqual(expected);
 });
 test('dead char test', () => {
   function deadCharacter(l, a, d, h) {
