@@ -18,7 +18,8 @@ test('dead char test', () => {
   }).toThrow('Нельзя повысить левел умершего');
 });
 test('damage test', () => {
-  const char = new Character(1, 20, 20, 50).damage(30);
+  const char = new Character(1, 20, 20, 50);
+  char.damage(30);
   const expected = new Character(1, 20, 20, 26);
-  expect(char).not.toBe(expected);
+  expect(char).toEqual(expected);
 });
